@@ -1,0 +1,11 @@
+
+<p>{{ note }}</p>
+<p>{{ result }}</p>
+
+<form action ="{%url 'start'%}" method = "post">
+    {%csrf_token%}
+    {{ question_form }}
+    <input type="submit" value="Submit">
+</form>
+
+ 
